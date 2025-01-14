@@ -1,3 +1,4 @@
+import 'package:e_commerce/Views/category_items.dart';
 import 'package:e_commerce/Views/details_screen.dart';
 import 'package:e_commerce/Widgets/banner.dart';
 import 'package:e_commerce/Widgets/curated_items.dart';
@@ -74,7 +75,11 @@ class _HomeState extends State<Home> {
                     .where((item)=> 
                     item.category.toLowerCase() ==
                     category[index].name.toLowerCase()).toList();
-                    
+                    Navigator.push(context, MaterialPageRoute(builder: (_)=> CategoryItem(
+                      category: category[index].name, 
+                      categoryItems: filteredItems),
+                      ),
+                      );
                     },
                     child: Column(
                       children: [

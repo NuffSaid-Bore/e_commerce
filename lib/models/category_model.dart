@@ -12,3 +12,12 @@ List<Category> category =[
   Category(name: 'Baby', image: ''),
 
 ];
+
+List<String> filterCategory = [
+  'Filter',
+  'Rating',
+  'Size',
+  'Color',
+  'Price',
+  'Brand',
+];

@@ -67,12 +67,15 @@ class _ItemDetailsState extends State<ItemDetails> {
               itemBuilder: (context, index) {
                 return Column(
                   children: [
-                    Image.asset(
-                      widget.eCommerce.image,
-                      height: size.height * 0.4,
-                      width: size.width * 0.85,
-                      fit: BoxFit.cover,
-                      ),
+                    Hero(
+                      tag: widget.eCommerce.image,
+                      child: Image.asset(
+                        widget.eCommerce.image,
+                        height: size.height * 0.4,
+                        width: size.width * 0.85,
+                        fit: BoxFit.cover,
+                        ),
+                    ),
                       const SizedBox(height: 20,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -143,9 +146,10 @@ class _ItemDetailsState extends State<ItemDetails> {
                 ),
                 const SizedBox(height: 7,),
                 Text('$myDescription ${widget.eCommerce.description}',
-                style: const TextStyle(fontSize: 16,
+                style: const TextStyle(fontSize: 10,
                 fontWeight: FontWeight.w500,
                 color: Colors.black26,
+                letterSpacing: 0.5,
                 ),
                 ),
                 const SizedBox(height: 20,),
