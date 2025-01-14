@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const SizedBox(height: 20, child: Text('E', style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),),),
+                const Text('E-Com', style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
                  Stack(
                   clipBehavior: Clip.none,
                   children: [
@@ -70,6 +70,10 @@ class _HomeState extends State<Home> {
                   category.length,
                   (index) => InkWell(
                     onTap: () {
+                    final filteredItems = fashionEcommerce
+                    .where((item)=> 
+                    item.category.toLowerCase() ==
+                    category[index].name.toLowerCase()).toList();
                     
                     },
                     child: Column(

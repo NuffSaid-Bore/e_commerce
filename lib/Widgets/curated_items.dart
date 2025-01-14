@@ -42,17 +42,19 @@ class CuratedItems extends StatelessWidget {
             size: 17,),
             Text(eCommmerceItems.rating.toString()),
             Text('${eCommmerceItems.review}', style: const TextStyle(color: Colors.black26),),
-            SizedBox(
-              width: size.width * 0.5 ,
-              child: Text(eCommmerceItems.name,maxLines: 1, overflow: TextOverflow.ellipsis, 
-              style: const TextStyle(fontSize: 16, height: 1.5, fontWeight: FontWeight.w600),),
-            ),
+           
             
           ],
         ),
+         SizedBox(
+              width: size.width * 0.5 ,
+              child: Text(eCommmerceItems.name,maxLines: 1, overflow: TextOverflow.ellipsis, 
+              style: const TextStyle(fontSize: 16, height: 1.5, fontWeight: FontWeight.w600),
+              ),
+            ),
         Row(
               children: [
-                Text('R${eCommmerceItems.price + 200}.00',
+                Text('R${eCommmerceItems.price + 299}.00',
                  style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 18, height: 1.5,color: Colors.pink),
                  ),
                  const SizedBox(width: 5,),
