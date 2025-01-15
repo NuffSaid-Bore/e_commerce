@@ -44,7 +44,8 @@ class CategoryItem extends StatelessWidget {
                         filled: true,
                         fillColor: Colors.white10,
                         focusedBorder: const OutlineInputBorder(
-                          borderSide: BorderSide.none
+                          borderSide: BorderSide.none,
+                          borderRadius: BorderRadius.all(Radius.circular(8),),
                               ),
                               prefixIcon: const Icon(Iconsax.search_normal,
                               color: Colors.black38,
