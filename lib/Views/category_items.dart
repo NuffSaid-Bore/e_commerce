@@ -1,5 +1,4 @@
 import 'package:e_commerce/Views/details_screen.dart';
-import 'package:e_commerce/Widgets/curated_items.dart';
 import 'package:e_commerce/models/category_model.dart';
 import 'package:e_commerce/models/model.dart';
 import 'package:e_commerce/models/sub_category.dart';
@@ -74,7 +73,7 @@ class CategoryItem extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
-                        color: Colors.black12,
+                        color: Colors.deepPurple,
                       ),
                     ),
                     child: Row(
@@ -108,7 +107,7 @@ class CategoryItem extends StatelessWidget {
                             height: 50,
                             width: 50,
                             decoration: BoxDecoration(
-                              color: Colors.white10,
+                              color: Colors.deepPurple,
                               shape: BoxShape.circle,
                               image: DecorationImage(image: AssetImage(subCategory[index].image),
                               ),
@@ -131,7 +130,8 @@ class CategoryItem extends StatelessWidget {
             ? const Center(
               child: Text('No items Available in this category',
               style: TextStyle(fontSize: 16, 
-              color: Colors.red),
+              color: Colors.red,
+              ),
               ),
             )
             : GridView.builder(

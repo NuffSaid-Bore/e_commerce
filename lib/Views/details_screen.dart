@@ -32,7 +32,7 @@ class _ItemDetailsState extends State<ItemDetails> {
                     child: Icon(Iconsax.shopping_bag, size: 28,),
                     ),
                     Positioned(
-                      right: -2,
+                      right: -4,
                       top: -5,
                       child: Container(
                         padding: const EdgeInsets.all(4),
@@ -146,7 +146,7 @@ class _ItemDetailsState extends State<ItemDetails> {
                 ),
                 const SizedBox(height: 7,),
                 Text('$myDescription ${widget.eCommerce.description}',
-                style: const TextStyle(fontSize: 10,
+                style: const TextStyle(fontSize: 13,
                 fontWeight: FontWeight.w500,
                 color: Colors.black26,
                 letterSpacing: 0.5,
